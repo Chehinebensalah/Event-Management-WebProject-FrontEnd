@@ -12,6 +12,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddadminComponent } from './adminCRUD/addadmin/addadmin.component';
 import { UpdateadminComponent } from './adminCRUD/updateadmin/updateadmin.component';
 import { ViewadminComponent } from './adminCRUD/viewadmin/viewadmin.component';
+import { AddeventComponent } from './eventCRUD/addevent/addevent.component';
+import { UpdateeventComponent } from './eventCRUD/updateevent/updateevent.component';
+import { VieweventComponent } from './eventCRUD/viewevent/viewevent.component';
+import { AboutComponent } from './HOME/about/about.component';
+import { NavbarComponent } from './HOME/navbar/navbar.component';
+import { CreatorsComponent } from './HOME/creators/creators.component';
+import { SubscriptionFormComponent } from './HOME/subscription-form/subscription-form.component';
+import { LoginmenuComponent } from './HOME/login/loginmenu/loginmenu.component';
+import { LoginadminComponent } from './HOME/login/loginadmin/loginadmin.component';
+import { LoginsuperadminComponent } from './HOME/login/loginsuperadmin/loginsuperadmin.component';
+import { ListeventsComponent } from './HOME/listevents/listevents.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +34,22 @@ import { ViewadminComponent } from './adminCRUD/viewadmin/viewadmin.component';
     DashboardComponent,
     AddadminComponent,
     UpdateadminComponent,
-    ViewadminComponent
+    ViewadminComponent,
+    AddeventComponent,
+    UpdateeventComponent,
+    VieweventComponent,
+    AboutComponent,
+    NavbarComponent,
+    CreatorsComponent,
+  
+    SubscriptionFormComponent,
+    LoginmenuComponent,
+    LoginadminComponent,
+    LoginsuperadminComponent,
+    ListeventsComponent,
+
+
+
   ],
   imports: [
     BrowserModule,

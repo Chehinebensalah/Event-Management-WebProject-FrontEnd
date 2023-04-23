@@ -5,13 +5,33 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddadminComponent } from './adminCRUD/addadmin/addadmin.component';
 import { UpdateadminComponent } from './adminCRUD/updateadmin/updateadmin.component';
 import { ViewadminComponent } from './adminCRUD/viewadmin/viewadmin.component';
+import { VieweventComponent } from './eventCRUD/viewevent/viewevent.component';
+import { AddeventComponent } from './eventCRUD/addevent/addevent.component';
+import { UpdateeventComponent } from './eventCRUD/updateevent/updateevent.component';
+import { AboutComponent } from './HOME/about/about.component';
+import { CreatorsComponent } from './HOME/creators/creators.component';
+import { LoginmenuComponent } from './HOME/login/loginmenu/loginmenu.component';
+import { ListeventsComponent } from './HOME/listevents/listevents.component';
 
 
 const routes: Routes = [
-  {path:'',component:DashboardComponent},
+// HOME COMPONENTS
+  {path:'',component:AboutComponent},
+  {path:'Creators',component:CreatorsComponent},
+  {path:'Homeevents',component:ListeventsComponent},
+  {path:'Loginmenu',component:LoginmenuComponent},
+
+
+//DASHBOARD 
+  {path:'login',component:DashboardComponent},
+//ADMINS
   { path: 'admins', component: ViewadminComponent },
-  { path: 'add', component: AddadminComponent },
-  { path: 'update/:cin', component: UpdateadminComponent },
+  { path: 'admin/add', component: AddadminComponent },
+  { path: 'admin/update/:cin', component: UpdateadminComponent },
+// EVENTS
+  { path: 'events', component: VieweventComponent },
+  { path: 'event/add', component: AddeventComponent },
+  { path: 'event/update/:id_event', component: UpdateeventComponent },
 ];
 
 @NgModule({

@@ -36,7 +36,7 @@ export class ViewadminComponent {
   }
 
   updateUser(id: number){
-    this.router.navigate(['update', id]);
+    this.router.navigate(['admin/update', id]);
   }
 
  
