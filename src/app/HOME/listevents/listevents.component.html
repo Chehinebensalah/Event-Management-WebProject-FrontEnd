@@ -3,9 +3,36 @@
     <div class="container mt-5 mb-5 p-5 bg-theme">
         <h1 class="text-white text-center">EVENTS </h1>
         <div class="p-5 mt-4 bg-secondary-theme text-theme-primary">
-            <div class="text-center">
-                <button class="btn btn-info btn-sm mt-4"> BACK TO HOME</button>
-            </div> 
+            <div class="mt-5">
+                <div class="container">
+                    <table class="table border" >
+                        <thead>
+                          <tr>
+                            <th scope="col">name</th>
+                            <th scope="col">image</th>
+                            <th scope="col">categorie</th>
+                            <th scope="col">date debut</th>
+                            <th scope="col">date fin</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let ev of events">
+                            <!--<td>{{user.id_event}}</td>-->
+                            <td>{{ev.name}}</td>
+                            <td><img [src]="ev.image_path" class="form-control img-fluid img-preview"></td>
+                            <!--<td>{{user.image_path}}</td>-->
+                            <td>{{ev.categorie}}</td>
+                            <td>{{ev.date_debut}}</td>
+                            <td>{{ev.date_fin}}</td>
+                            
+                          </tr>
+                         
+                        </tbody>
+                    </table>
+        
+                </div>
+            </div>
         </div>
     </div>
 </section>

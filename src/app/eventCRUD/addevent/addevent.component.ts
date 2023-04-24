@@ -16,7 +16,7 @@ export class AddeventComponent {
   imgSrc : any ='../../../assets/image-placeholder.jpg'
   
   form = new FormGroup({
-    id_event: new FormControl('', [Validators.required]),
+    id_event: new FormControl('', []),
     name: new FormControl('', [Validators.required]),
     image_path: new FormControl('', [Validators.required]),
     categorie: new FormControl('', [Validators.required]),
