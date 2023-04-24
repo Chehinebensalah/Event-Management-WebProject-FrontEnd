@@ -38,7 +38,7 @@ body{
 }
 
 
-input[type=text],input[type=email]{
+input[type=text],input[type=email],input[type=password],input[type=number]{
     height: 60px;
     padding-left:20px;
     font-size: 13px;

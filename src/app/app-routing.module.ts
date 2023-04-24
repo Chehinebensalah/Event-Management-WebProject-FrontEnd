@@ -12,6 +12,8 @@ import { AboutComponent } from './HOME/about/about.component';
 import { CreatorsComponent } from './HOME/creators/creators.component';
 import { LoginmenuComponent } from './HOME/login/loginmenu/loginmenu.component';
 import { ListeventsComponent } from './HOME/listevents/listevents.component';
+import { LoginsuperadminComponent } from './HOME/login/loginsuperadmin/loginsuperadmin.component';
+import { LoginadminComponent } from './HOME/login/loginadmin/loginadmin.component';
 
 
 const routes: Routes = [
@@ -20,8 +22,10 @@ const routes: Routes = [
   {path:'Creators',component:CreatorsComponent},
   {path:'Homeevents',component:ListeventsComponent},
   {path:'Loginmenu',component:LoginmenuComponent},
-
-
+// login super admin 
+  {path:'superadminlogin',component:LoginsuperadminComponent},
+//login admin 
+  {path:'adminlogin',component:LoginadminComponent},
 //DASHBOARD 
   {path:'login',component:DashboardComponent},
 //ADMINS
