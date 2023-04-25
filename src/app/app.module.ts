@@ -24,6 +24,7 @@ import { LoginsuperadminComponent } from './HOME/login/loginsuperadmin/loginsupe
 import { ListeventsComponent } from './HOME/listevents/listevents.component';
 import { SubsviewComponent } from './subscribersCRUD/subsview/subsview.component';
 import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-event.component';
+import { ViewEventSinglepageComponent } from './eventCRUD/view-event-singlepage/view-event-singlepage.component';
 
 
 
@@ -50,6 +51,7 @@ import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-e
     ListeventsComponent,
     SubsviewComponent,
     AdminviewEVENTComponent,
+    ViewEventSinglepageComponent,
 
 
 

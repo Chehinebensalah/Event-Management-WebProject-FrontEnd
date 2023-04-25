@@ -27,7 +27,7 @@ export class AddeventComponent {
     date_debut: new FormControl('', [Validators.required]),
     date_fin: new FormControl('', [Validators.required]),
     byadmin: new FormControl('', [Validators.required]),
-  
+    description:new FormControl('', [Validators.required])
   })
   
   receiveddata : string =""

@@ -9,7 +9,7 @@
                         <thead>
                           <tr>
                             <th scope="col">name</th>
-                            <th scope="col">image</th>
+                            <th scope="col">   </th>
                             <th scope="col">categorie</th>
                             <th scope="col">date debut</th>
                             <th scope="col">date fin</th>
@@ -20,12 +20,16 @@
                           <tr *ngFor="let ev of events">
                             <!--<td>{{user.id_event}}</td>-->
                             <td>{{ev.name}}</td>
-                            <td><img [src]="ev.image_path" class="form-control img-fluid img-preview"></td>
+                            <td><img src="https://scontent.ftun9-1.fna.fbcdn.net/v/t1.6435-9/132011634_191958049299961_711808021614134836_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=dbJnXTCwFLAAX8EsHzG&_nc_ht=scontent.ftun9-1.fna&oh=00_AfARM47TMyc3bx3qQ2iik9V5xPWWZXzlxCR1yHDwNxM3pw&oe=646A221C" class="form-control img-fluid img-preview"></td>
                             <!--<td>{{user.image_path}}</td>-->
                             <td>{{ev.categorie}}</td>
                             <td>{{ev.date_debut}}</td>
                             <td>{{ev.date_fin}}</td>
-                            
+                            <td>
+                              <div class="d-inline mx-2">
+                                <button class="btn btn-warning" (click)="show(ev.id_event)" type="button">Show</button>
+                              </div>
+                            </td>
                           </tr>
                          
                         </tbody>

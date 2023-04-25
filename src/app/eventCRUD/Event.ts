@@ -5,5 +5,6 @@ export interface Event {
     categorie :String;
     date_debut:Date;
     date_fin :Date;
+    description : String;
     byadmin :number;
 }

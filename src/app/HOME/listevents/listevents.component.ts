@@ -17,11 +17,14 @@ export class ListeventsComponent {
   }
 
   ngOnInit(): void {
-    this.service.getEventsbyId(1111).subscribe(data => {
+    this.service.getUsers().subscribe(data => {
       this.events = data;
     })
     
    
   }
-
+  show(id_event:number){
+    localStorage.setItem("id_event",id_event.toString());
+    this.router.navigateByUrl('/singlepage');
+  }
 }
