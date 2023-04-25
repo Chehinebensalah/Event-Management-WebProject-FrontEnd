@@ -16,7 +16,7 @@ export class VieweventComponent {
   }
 
   ngOnInit(): void {
-    this.service.getEventsbyId(1111).subscribe(data => {
+    this.service.getUsers().subscribe(data => {
       this.events = data;
     })
    

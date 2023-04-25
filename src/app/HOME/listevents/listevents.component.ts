@@ -17,9 +17,10 @@ export class ListeventsComponent {
   }
 
   ngOnInit(): void {
-    this.service.getUsers().subscribe(data => {
+    this.service.getEventsbyId(1111).subscribe(data => {
       this.events = data;
     })
+    
    
   }
 
