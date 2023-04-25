@@ -2,14 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EventServicesService } from '../event-services.service';
-
+import { SharedService } from 'src/app/shared.service';
+import { Admin } from 'src/app/adminCRUD/Admin';
+import { LoginsuperadminComponent } from 'src/app/HOME/login/loginsuperadmin/loginsuperadmin.component';
 @Component({
   selector: 'app-addevent',
   templateUrl: './addevent.component.html',
   styleUrls: ['./addevent.component.css']
 })
+
 export class AddeventComponent {
-  constructor(private service: EventServicesService, private router: Router) { }
+  constructor(private service: EventServicesService, private router: Router,
+    private dataService: SharedService) { }
 
   data: any
 
@@ -26,8 +30,11 @@ export class AddeventComponent {
   
   })
   
-
+  receiveddata : string =""
+  
   ngOnInit(): void {
+    
+    
   }
 
   

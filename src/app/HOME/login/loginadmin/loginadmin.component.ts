@@ -12,16 +12,16 @@ export class LoginadminComponent {
   constructor(private router : Router, private adminservice :LoginServicesService ){}
   
   ngOnInit(): void{}
-
+  
   getData:boolean | undefined;
   onSubmit(formValue : any){
     //console.log(formValue.id);
     this.adminservice.getadmindata(<number>formValue.id,<string>formValue.mail,formValue.password).subscribe((res:Object)=>{
-                        
+      localStorage.setItem("id",formValue.id);
       this.getData = res as boolean;
       console.log(res);
       if(this.getData == true ){
-        this.router.navigate(['/login'])
+        this.router.navigate(['specifiedadmin'])
       }else{
         
         console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");

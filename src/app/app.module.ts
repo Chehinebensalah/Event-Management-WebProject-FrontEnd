@@ -22,6 +22,8 @@ import { LoginmenuComponent } from './HOME/login/loginmenu/loginmenu.component';
 import { LoginadminComponent } from './HOME/login/loginadmin/loginadmin.component';
 import { LoginsuperadminComponent } from './HOME/login/loginsuperadmin/loginsuperadmin.component';
 import { ListeventsComponent } from './HOME/listevents/listevents.component';
+import { SubsviewComponent } from './subscribersCRUD/subsview/subsview.component';
+import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-event.component';
 
 
 
@@ -46,6 +48,8 @@ import { ListeventsComponent } from './HOME/listevents/listevents.component';
     LoginadminComponent,
     LoginsuperadminComponent,
     ListeventsComponent,
+    SubsviewComponent,
+    AdminviewEVENTComponent,
 
 
 

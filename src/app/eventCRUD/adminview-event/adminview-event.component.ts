@@ -1,13 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { EventServicesService } from '../event-services.service';
+import { LoginmenuComponent } from 'src/app/HOME/login/loginmenu/loginmenu.component';
+import { LoginadminComponent } from 'src/app/HOME/login/loginadmin/loginadmin.component';
+
+@Injectable({providedIn: 'root'})
 
 @Component({
-  selector: 'app-viewevent',
-  templateUrl: './viewevent.component.html',
-  styleUrls: ['./viewevent.component.css']
+  selector: 'app-adminview-event',
+  templateUrl: './adminview-event.component.html',
+  styleUrls: ['./adminview-event.component.css']
 })
-export class VieweventComponent {
+export class AdminviewEVENTComponent {
+
   events: any[] | undefined
   //url: string = "http://localhost:8080/";
 
@@ -15,8 +20,11 @@ export class VieweventComponent {
    
   }
 
+  idget :any
+
   ngOnInit(): void {
-    this.service.getEventsbyId(1111).subscribe(data => {
+    this.idget = Number(localStorage.getItem("id"));
+    this.service.getEventsbyId(this.idget).subscribe(data => {
       this.events = data;
     })
    
@@ -36,4 +44,7 @@ export class VieweventComponent {
   updateUser(id_event: number){
     this.router.navigate(['event/update', <number>id_event]);
   }
+
+
+
 }

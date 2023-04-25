@@ -36,4 +36,11 @@ export class EventServicesService {
   deleteUser(id: number): Observable<any>{
     return this.http.delete<any>(`${this.url}delete/${id}`)
   }
+
+  // get events by id of admin who add it 
+  getEventsbyId(id : number): Observable<any[]>{
+    return this.http.get<any[]>(`${this.url}geteventbyidadmin/${id}`)
+  }
+
+
 }

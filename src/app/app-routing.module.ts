@@ -14,6 +14,8 @@ import { LoginmenuComponent } from './HOME/login/loginmenu/loginmenu.component';
 import { ListeventsComponent } from './HOME/listevents/listevents.component';
 import { LoginsuperadminComponent } from './HOME/login/loginsuperadmin/loginsuperadmin.component';
 import { LoginadminComponent } from './HOME/login/loginadmin/loginadmin.component';
+import { SubsviewComponent } from './subscribersCRUD/subsview/subsview.component';
+import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-event.component';
 
 
 const routes: Routes = [
@@ -36,6 +38,10 @@ const routes: Routes = [
   { path: 'events', component: VieweventComponent },
   { path: 'event/add', component: AddeventComponent },
   { path: 'event/update/:id_event', component: UpdateeventComponent },
+//normal admin view his events
+  {path:'specifiedadmin',component:AdminviewEVENTComponent},
+  //subs 
+  {path:'subscribers',component:SubsviewComponent}
 ];
 
 @NgModule({
