@@ -36,7 +36,7 @@ export class AddadminComponent {
 
     
     
-    this.router.navigate(['/']);
+    this.router.navigate(['event/add']);
   }
 
 }
