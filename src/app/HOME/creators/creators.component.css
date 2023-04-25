@@ -1,8 +1,56 @@
-img{
-    height: 350px;
-    width: 250px;
-    border-radius: 30%;
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 50px;
+    overflow: hidden;
 }
-.profile{
-    padding-left: 30px;
+.card-header{
+    background-color: #0d3f71;
+    padding: 60px 40px;
+}
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background-color: linear-gradient(130deg,#0d3f71,#E66767);
+    margin: auto;
+    background-size: 200% 200% ;
+    border-radius: 50%;
+}
+
+.pic img{
+    display: block;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+}
+
+.name{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc{
+    font-size: 20px;
+    color:#4b8ac9;
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+.sm a:hover{
+    color: #4b8ac9;
+}
+.text-center{
+    color: #4b8ac9;
+    font-size: 15px;
 }

@@ -2,8 +2,8 @@
 @import '~node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
-    --primary-color:#026467;
-    --secondary-color:#E5F5EA;
+    --primary-color:#024a77;
+    --secondary-color:#e2ecf7;
     --body-text-color:#596392;
     --navbar-footer-color:#F9F9F9;
 }

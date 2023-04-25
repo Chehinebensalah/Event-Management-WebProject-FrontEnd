@@ -9,6 +9,7 @@ import { Event } from './Event';
 export class EventServicesService {
 
   private url = "http://localhost:8080/event/";
+  
 
   constructor(private http: HttpClient) { }
 
