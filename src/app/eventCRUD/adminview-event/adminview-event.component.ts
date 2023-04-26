@@ -42,7 +42,7 @@ export class AdminviewEVENTComponent {
   }
 
   updateUser(id_event: number){
-    this.router.navigate(['event/update', <number>id_event]);
+    this.router.navigate(['specifiedadminupdate', <number>id_event]);
   }
 
 

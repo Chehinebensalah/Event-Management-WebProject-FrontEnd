@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADMIN ADD EVENT</title>
+</head>
+<body>
+    <!--Main Content-->
+    <div class="my-5">
+      <div class="mx-auto w-25 " style="max-width:100%;">
+        <h2 class="text-center mb-3">ADMIN ADD EVENT</h2>
+        <form [formGroup]="form" (ngSubmit)="submit()" class="shadow-effect">
+          
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="id_event" class="form-label">id_event</label>
+              <textarea id="id_event" type="text" name="id_event"  formControlName="id_event" class="form-control" placeholder="id_event" rows="3" required></textarea>
+            </div>
+          </div>
+          
+          <!--name-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name"  formControlName="name" type="text" name="name" class="form-control" placeholder="Name" required>
+            </div>
+          </div>
+
+
+          <!--Eimage_path-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3" >
+              <label for="image_path" class="form-label">Eimage_path</label>
+              <img [src]="imgSrc" class="form-control img-fluid img-preview">
+              <input id="image_path" type="file" accept="image/*" (change)="showPreview($event)"
+              formControlName="image_path" name="image_path" 
+              class="form-control" required>
+            </div>
+          </div>
+
+          
+          <!--PNo-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="categorie" class="form-label">categorie</label>
+              <input id="categorie" type="text" name="categorie"  formControlName="categorie" class="form-control" placeholder="categorie" required>
+            </div>
+          </div>
+
+          <!--date_debut-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="date_debut" class="form-label">date_debut</label>
+              <input id="date_debut" type="date" name="date_debut"  formControlName="date_debut" class="form-control" placeholder="date_debut" required>
+            </div>
+          </div>
+
+          <!--date_fin-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="date_fin" class="form-label">date_fin</label>
+              <input id="date_fin" type="date" name="date_fin"  formControlName="date_fin" class="form-control" placeholder="date_fin" required>
+            </div>
+          </div>
+         
+          <!--categorie-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3 ">
+              <label for="Byadmin" class="form-label">Byadmin</label>
+              <input id="Byadmin" type="number" name="Byadmin"  formControlName="byadmin" class="form-control" placeholder="Byadmin" required>
+            </div>
+          </div>
+          <!--date_fin-->
+          <div class="row">
+            <div class="col-md-12 form-group mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input id="description" type="text" name="description"  formControlName="description" class="form-control" placeholder="description" required>
+            </div>
+          </div>
+            
+
+         
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">
+            </div>
+          </div>
+
+          <div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

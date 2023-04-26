@@ -1,21 +1,24 @@
-
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Event } from '../Event'
 import { EventServicesService } from '../event-services.service';
-
+import { Event } from '../Event'
 @Component({
-  selector: 'app-updateevent',
-  templateUrl: './updateevent.component.html',
-  styleUrls: ['./updateevent.component.css']
+  selector: 'app-adminupdate-event',
+  templateUrl: './adminupdate-event.component.html',
+  styleUrls: ['./adminupdate-event.component.css']
 })
-export class UpdateeventComponent {
+export class AdminupdateEventComponent {
+
+
+  constructor(private service: EventServicesService, private route: ActivatedRoute, private router : Router) { }
+
   user?: Event
   data: any
   imgSrc : any ='../../../assets/image-placeholder.jpg'
 
-  constructor(private service: EventServicesService, private route: ActivatedRoute, private router : Router) { }
+
+
 
   ngOnInit(): void {
     let id_event = this.route.snapshot.params['id_event'];
@@ -52,4 +55,8 @@ export class UpdateeventComponent {
     }
     reader.readAsDataURL($event.target.files[0]);
   }
+
+
+
+
 }

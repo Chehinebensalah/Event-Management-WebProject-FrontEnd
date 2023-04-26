@@ -17,6 +17,8 @@ import { LoginadminComponent } from './HOME/login/loginadmin/loginadmin.componen
 import { SubsviewComponent } from './subscribersCRUD/subsview/subsview.component';
 import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-event.component';
 import { ViewEventSinglepageComponent } from './eventCRUD/view-event-singlepage/view-event-singlepage.component';
+import { AdminupdateEventComponent } from './eventCRUD/adminupdate-event/adminupdate-event.component';
+import { AdminaddEventComponent } from './eventCRUD/adminadd-event/adminadd-event.component';
 
 
 const routes: Routes = [
@@ -41,6 +43,11 @@ const routes: Routes = [
   { path: 'event/update/:id_event', component: UpdateeventComponent },
 //normal admin view his events
   {path:'specifiedadmin',component:AdminviewEVENTComponent},
+  {path:'specifiedadminupdate/:id_event',component:AdminupdateEventComponent},
+  {path:'specifiedadminadd',component:AdminaddEventComponent},
+
+
+
 //single page 
   {path:'singlepage',component:ViewEventSinglepageComponent},
   //subs 

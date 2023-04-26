@@ -25,6 +25,8 @@ import { ListeventsComponent } from './HOME/listevents/listevents.component';
 import { SubsviewComponent } from './subscribersCRUD/subsview/subsview.component';
 import { AdminviewEVENTComponent } from './eventCRUD/adminview-event/adminview-event.component';
 import { ViewEventSinglepageComponent } from './eventCRUD/view-event-singlepage/view-event-singlepage.component';
+import { AdminupdateEventComponent } from './eventCRUD/adminupdate-event/adminupdate-event.component';
+import { AdminaddEventComponent } from './eventCRUD/adminadd-event/adminadd-event.component';
 
 
 
@@ -52,6 +54,8 @@ import { ViewEventSinglepageComponent } from './eventCRUD/view-event-singlepage/
     SubsviewComponent,
     AdminviewEVENTComponent,
     ViewEventSinglepageComponent,
+    AdminupdateEventComponent,
+    AdminaddEventComponent,
 
 
 
